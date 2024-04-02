@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11483194, guid: db34d05f63af2294abfd96649552d5e8, type: 3}
       propertyPath: gridY
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11483194, guid: db34d05f63af2294abfd96649552d5e8, type: 3}
       propertyPath: startX
