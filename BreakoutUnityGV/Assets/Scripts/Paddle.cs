@@ -7,6 +7,7 @@ public class Paddle : MonoBehaviour {
     public Vector2 Direction;
     public float Speed;
 
+    public bool OtherSide;
     private Vector3 moveTranslation;
     private Rigidbody2D rb2D;
     SpriteRenderer spriteRenderer;
