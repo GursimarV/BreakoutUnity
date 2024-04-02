@@ -7,6 +7,7 @@ public class BallController : MonoBehaviour
     public float Speed;
 
     public GameObject Paddle;
+    public GameObject OtherPaddle;
     public GameObject LostButton;
     private bool PlayerRespawn = true;
     private bool CanRespawn = true;
@@ -41,8 +42,14 @@ public class BallController : MonoBehaviour
             PlayerRespawn = false;
             if (CanRespawn == true)
             {
-                this.gameObject.transform.position = new Vector3(Paddle.transform.position.x, BallRespawn.y, 0);
+                this.gameObject.transform.position = new Vector3(OtherPaddle.transform.position.x, BallRespawn.y, 0);
                 CanRespawn = false;
+                PlayerRespawn = true;
+            }
+            else
+            {
+                this.gameObject.transform.position = new Vector3(Paddle.transform.position.x, BallRespawn.y, 0);
+                CanRespawn = true;
                 PlayerRespawn = true;
             }
 
