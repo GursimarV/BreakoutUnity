@@ -12,6 +12,8 @@ public class BlockManager : MonoBehaviour
 
     public GameObject console;
 
+    private int AddBlockRow = 0;
+
     void Start()
     {
         this.LoadLevel();   
@@ -34,10 +36,11 @@ public class BlockManager : MonoBehaviour
             {
                 Vector3 pos = new Vector3(x + padding, y + padding, 0);
                 GameObject b = (GameObject)Instantiate(prefab, pos, Quaternion.identity, this.transform);
-                
+                AddBlockRow += 1;
                 Bricks.Add(b);
             }
         }
+        ScoreManager.NumberOfBlocks = AddBlockRow;
     }
 
     //Win

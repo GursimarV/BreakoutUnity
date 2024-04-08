@@ -7,9 +7,9 @@ public class ScoreManager : MonoBehaviour {
     public GameObject WinnerButton;
     public GameObject Ball;
     
-    public static int Lives;
-    public static int Level;
-    public static int Score;
+    public static int Lives = 3;
+    public static int Level = 1;
+    public static int Score = 0;
     public static int NumberOfBlocks = 0;
 
     Texture2D paddle;

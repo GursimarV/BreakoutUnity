@@ -82,10 +82,8 @@ public class UnityBlock : MonoBehaviour, IHitMessageTarget
 
     public void Hit(BallCollision ballCollision)
     {
-
+        ScoreManager.Score += 1;
         this.block.Hit();
-        
-
     }
 
     public void HitMessage()
