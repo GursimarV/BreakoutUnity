@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 37
+  controlID: 91
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\gursi\OneDrive\Desktop\Real Class Work\Game Programming
     1\BreakoutUnity\BreakoutUnityGV
@@ -337,8 +337,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc060000
-    m_LastClickedID: 1740
+    m_SelectedIDs: 24060000
+    m_LastClickedID: 1572
     m_ExpandedIDs: 00000000f805000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -507,9 +507,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3a94feff
-      m_LastClickedID: -93126
-      m_ExpandedIDs: c094feffdc95feff4699feff6e9afeff969bfeff48c3feff96c3feffd6c3feff5ac4feff04c7feff2ac8feffa2ccfefffed0feff4cd2feff0aac0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: fecdfeff44cefeff16d0feff26d1feff4cd2feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -915,9 +915,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.1930153, y: -0.53675544, z: 4.3463774}
+    m_Target: {x: 0.6546803, y: -0.48711538, z: 4.3242397}
     speed: 2
-    m_Value: {x: -0.1930153, y: -0.53675544, z: 4.3463774}
+    m_Value: {x: 0.5176637, y: -0.49627244, z: 4.3278346}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -967,9 +967,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.1346154
+    m_Target: 8.348364
     speed: 2
-    m_Value: 6.1346154
+    m_Value: 7.988865
   m_Ortho:
     m_Target: 1
     speed: 2
