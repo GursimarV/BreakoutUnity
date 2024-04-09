@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         //direction.x = direction.y = 0;
         keyDirection.x = keyDirection.y = 0;
 
-        //Keyboard
+        //For other player's controller
         if (OtherSide == true)
         {
             if (Input.GetKey("d") && (this.gameObject.transform.position.x < ((topRight.x + bottomLeft.x) - 1.1)))
@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
                 keyDirection.x += -1;
             }
         }
+        //Main player's controller
         else
         {
             if (Input.GetKey("right") && (this.gameObject.transform.position.x < (topRight.x - 1)))
