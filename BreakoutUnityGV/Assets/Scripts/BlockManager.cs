@@ -40,13 +40,7 @@ public class BlockManager : MonoBehaviour
                 Bricks.Add(b);
             }
         }
-        ScoreManager.NumberOfBlocks = AddBlockRow;
-    }
-
-    //Win
-    void Win()
-    {
-        throw new System.Exception("Winner Winner Chicken Dinner!"); //bad way to win
+        //ScoreManager.NumberOfBlocks = Bricks.Count;
     }
 
     void Update()
@@ -70,5 +64,11 @@ public class BlockManager : MonoBehaviour
         {
             this.Win();
         }
+    }
+    //Win
+    void Win()
+    {
+        //throw new System.Exception("Winner Winner Chicken Dinner!");
+        ScoreManager.state = ScoreState.Win;
     }
 }

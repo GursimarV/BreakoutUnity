@@ -21,6 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1;
+        ScoreManager.Level++;
     }
 
     public void QuitGame()

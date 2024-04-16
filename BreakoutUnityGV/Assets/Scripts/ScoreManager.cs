@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
+public enum ScoreState { Win, Lose, Pause, Playing };
+
 public class ScoreManager : MonoBehaviour {
 
     public GameObject WinnerButton;
@@ -11,6 +13,8 @@ public class ScoreManager : MonoBehaviour {
     public static int Level = 1;
     public static int Score = 0;
     public static int NumberOfBlocks = 0;
+
+    public static ScoreState state = ScoreState.Playing;
 
     Texture2D paddle;
     public Text LivesText, LevelText, ScoreText;
@@ -77,7 +81,7 @@ public class ScoreManager : MonoBehaviour {
 
     private void AllBlocksGone()
     {
-        if (Score >= NumberOfBlocks)
+        if (state == ScoreState.Win)
         {
             WinnerButton.SetActive(true);
             Ball.SetActive(false);
