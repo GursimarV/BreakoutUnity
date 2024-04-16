@@ -12,8 +12,6 @@ public class UnityBlock : MonoBehaviour, IHitMessageTarget
     public Sprite NormalTexture, HitTexture;
     SpriteRenderer spriteRenderer;
 
-    
-
     private BlockState blockstate;
     public BlockState BlockState
     {
@@ -33,7 +31,7 @@ public class UnityBlock : MonoBehaviour, IHitMessageTarget
         NormalTexture = Resources.Load<Sprite>("block_blue");
         HitTexture = Resources.Load<Sprite>("block_bubble");
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
-        this.BlockState = BlockState.Hit;
+        //this.BlockState = BlockState.Normal;
         updateBlockTexture();
     }
 
@@ -47,11 +45,14 @@ public class UnityBlock : MonoBehaviour, IHitMessageTarget
                 break;
             case BlockState.Hit:
                 this.spriteRenderer.sprite = HitTexture;
+                //This destroys the block
+                //Destroy(this.gameObject);
                 break;
             case BlockState.Broken:
                 this.spriteRenderer.sprite = NormalTexture;
                 //this.enabled = false;
                 this.gameObject.SetActive(false); //don't show block
+                Destroy(this.gameObject);
                 break;
         }
     }
@@ -71,8 +72,7 @@ public class UnityBlock : MonoBehaviour, IHitMessageTarget
     void Update()
     {
         block.UpdateBlockState();
-        UnityBlockUpdate();
-        
+        UnityBlockUpdate();  
     }
 
     protected virtual void UnityBlockUpdate()
